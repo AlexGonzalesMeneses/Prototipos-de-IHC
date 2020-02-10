@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Burdelopolis website</title>
+    <!--GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+    <!-- BOOTSTRAP 4-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- CUSTOM CSS PROPIOS-->
+    <link rel="stylesheet" href="css/main.css">
+    <!--FONTAWSOME-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--SCROLLREVEAL-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm wg-light navbar-light">
+        <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" style="width: auto;"></a>
+
+            <!-- Links -->
+            <ul class="navbar-nav ml-auto">
+                <form class="form-inline" action="/action_page.php">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Buscar">
+                    <button class="btn btn-success" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Categorias
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="edificio.html">Hoteles</a>
+                        <a class="dropdown-item" href="departamento.html">Departamentos</a>
+                        <a class="dropdown-item" href="local.html">Locales comerciales</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="loggin.html">Acceder</a>
+                </li>
+                <li>
+                    <a href="loggin.html"><button class="btn btn-success" type="submit"><i
+                                class="fas fa-user"></i></button></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="mt-4">
+        <section class="header" id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="img" src="images/products/ed1.jpeg">
+                            <h4 class="titulo">Edificio en Lujan</h4>
+                            <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, excepturi unde?</p>
+                            <a id="enlace" href="#" class="btn btn-outline-secondary header-btn btn-lg mt-2">$12000/mes</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="img" src="images/products/ed2.jpeg">
+                            <h4 class="titulo">Edificio en Santiago</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, excepturi unde?</p>
+                            <a href="#" class="btn btn-outline-secondary header-btn btn-lg mt-2">$11000/mes</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="img" src="images/products/ed3.jpeg">
+                            <h4 class="titulo">Edificio en Rosario</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, excepturi unde?</p>
+                            <a href="#" class="btn btn-outline-secondary header-btn btn-lg mt-2">$10500/mes</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="img" src="images/products/ed4.jpeg">
+                            <h4 class="titulo">Edificio en Cochabamba</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, excepturi unde?</p>
+                            <a href="#" class="btn btn-outline-secondary header-btn btn-lg mt-2">$9000/mes</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="img" src="images/products/ed5.jpeg">
+                            <h4 class="titulo">Edificio en Cala Cala</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, excepturi unde?</p>
+                            <a href="#" class="btn btn-outline-secondary header-btn btn-lg mt-2">$9010/mes</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="img" src="images/products/ed1.jpeg">
+                            <h4 class="titulo">Edificio en Cochabamba</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, excepturi unde?</p>
+                            <a href="#" class="btn btn-outline-secondary header-btn btn-lg mt-2">$10100/mes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="mt-4">
+        <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+            <div class="container text-center">
+                <p>Siguenos en nuestras redes</p>
+                <p><a><i class="fab fa-facebook"></a></i> <i class="fab fa-google-plus"></i> <i
+                        class="fab fa-twitter"></i>
+                </p>
+                <p>Copyright 2020&copy; Olivos inmuebles</p>
+            </div>
+        </footer>
+    </div>
+    <script>
+        window.sr = ScrollReveal();
+
+        sr.reveal('.navbar', {
+            duration: 2000,
+            origin: 'bottom'
+        });
+
+        sr.reveal('.header-content-left', {
+            duration: 2000,
+            origin: 'top',
+            distance: '300px'
+        });
+
+        sr.reveal('.header-content-right', {
+            duration: 2000,
+            origin: 'right',
+            distance: '300px'
+        });
+
+        sr.reveal('.header-btn', {
+            duration: 2000,
+            delay: 1000,
+            origin: 'bottom'
+        });
+
+        sr.reveal('#testimonial div', {
+            duration: 2000,
+            origin: 'left',
+            distance: '300px',
+            viewFactor: 0.2
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+    <!--BOOTSTRAP 4 scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
